@@ -1,5 +1,3 @@
-global console;
-eslint no-console: "off";
 
 // Expression ; liefert einen Werte zurück
 var a;
@@ -10,12 +8,19 @@ if(a===3){
     console.log("stimmt");
 }
 
+greet();
+
+//Statmen;
 function greet(){
     console.log("Hallo");
 
 }
 
+//anonymousGreet(); <== funktioniert nicht ! weil noch nicht definiert !
+
+// Expression
 var anonymousGreet = function(){
     console.log("Hallo anonymous")
 } 
+anonymousGreet();
 
